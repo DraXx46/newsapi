@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de API de Notícias com Logs</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <h1>Exemplo de API de Notícias com Logs</h1>
+        <button onclick="fetchTopHeadlines()">Principais Manchetes</button>
+        <button onclick="fetchSources()">Fontes de Notícias</button>
+        <input type="text" id="search" placeholder="Buscar notícias..." />
+        <button onclick="fetchEverything()">Buscar</button>
+        <button onclick="fetchLogs()">Visualizar Logs</button> 
+    </header>
+
+    <div class="news-container" id="news-container"></div>
+
+    <div id="logsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Logs</h2>
+            <div id="logs-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
